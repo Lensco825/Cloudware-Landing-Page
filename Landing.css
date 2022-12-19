@@ -127,12 +127,12 @@ span {
 }
 
 header > img {
-    width: 300px;
+    width: 500px;
     border-radius: 10px;
     box-shadow: 10px 10px var(--green);
 }
 
-section {
+.Extra {
     background-color: var(--lunarWhite);
     color: black;
     height: 70%;
@@ -141,7 +141,7 @@ section {
     align-items: center;
 }
 
-section > h1 {
+.Extra > h1 {
     width: 100%;
     text-align: left;
 }
@@ -170,4 +170,37 @@ section > h1 {
 
 .item > span {
     color: black;
+}
+
+.storage-section {
+  display: flex;
+}
+
+.storage-section > div > img {
+  position: relative;
+  top: 40px;
+  left: 50px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 10px 10px var(--green);
+}
+
+.storage-section > div > p {
+font-size: 27px;
+}
+
+
+ion-icon {
+  z-index: 3;
+  font-size: 130px;
+  color: blue;
+}
+
+ion-icon:nth-child(3) {
+  transform: translate(220px, -520px);
+}
+
+.Extras-section {
+  border: solid 2px red;
+  width: 100%;
 }
