@@ -175,7 +175,7 @@ ion-icon:nth-child(3) {
   column-gap: 30px;
   grid-template-rows: 30% auto;
   background-color: var(--green);
-  padding-top: 3rem;
+  place-items: center;
 }
 
 
@@ -185,46 +185,19 @@ ion-icon:nth-child(3) {
 }
 
 .Extras-section > h2 {
-  width: 100%;
+  width: 40%;
   text-align: center;
+  border-bottom: thick double black;
+  height: 15%;
 }
-
 
 div > main {
   display: flex;
   flex-direction: column;
 }
 
-.section-header {
-  width: 100%;
-  align-content: center;
-}
-
-.section-header::after {
-  content: '';
-   height: 3px;
-  width: 30%;
-  background-color: #030303;
-}
-
-
-.section-header::before {
-  content: '';
-   height: 3px;
-  width: 30%;
-  background-color: #030303;
-}
-
-.section-header {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-}
 
 .Extras-section > div > img {
   width: 500px;
   border-radius: 10px;
 }
-
-
-
