@@ -188,18 +188,38 @@ ion-icon:nth-child(3) {
   width: 100%;
   text-align: center;
 }
-.Extras-section > h2::before {
-  content: 'blaaaaaaaaaaaaaaaaaaaaaaa';
-  width: 50rem;
-  background-color: black;
-  font-size: 2px;
-} 
+
 
 div > main {
   display: flex;
   flex-direction: column;
 }
 
+.section-header {
+  width: 100%;
+  align-content: center;
+}
+
+.section-header::after {
+  content: '';
+   height: 3px;
+  width: 30%;
+  background-color: #030303;
+}
+
+
+.section-header::before {
+  content: '';
+   height: 3px;
+  width: 30%;
+  background-color: #030303;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
 
 .Extras-section > div > img {
   width: 500px;
