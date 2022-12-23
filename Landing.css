@@ -5,6 +5,7 @@ html, body {
     width: 100%;
     height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -60,7 +61,7 @@ nav {
     gap: 10%;
     align-items: center;
     justify-content: center;
-    background-color: #030303;    
+    background-color: #030303; 
     color: white;
     font-family: 'Poppins', sans-serif;
     width: 100%;
@@ -93,8 +94,10 @@ background-color: white;
 
 header {
     display: grid;
-    grid-template-columns: 50% auto;
+    grid-template-columns: 50% 50%;
     gap: 30px;
+    align-items: center;
+    padding-left: 5rem;
 }
 
 
@@ -147,7 +150,6 @@ header > img {
 .storage-section > div > img {
   position: relative;
   top: 40px;
-  left: 50px;
     width: 250px;
     border-radius: 10px;
     box-shadow: 10px 10px var(--green);
@@ -165,7 +167,7 @@ ion-icon {
 }
 
 ion-icon:nth-child(3) {
-  transform: translate(220px, -520px);
+  transform: translate(32px, -520px);
 }
 
 .Extras-section {
@@ -175,6 +177,12 @@ ion-icon:nth-child(3) {
   grid-template-rows: 30% auto;
   background-color: var(--green);
   place-items: center;
+  align-content: center;
+  width: 100%;
+}
+
+section {
+  width: 100%;
 }
 
 
@@ -214,16 +222,15 @@ div > main {
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  background-color: #FBDA61;
-background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+  background-color: #85FFBD;
+background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
 }
 
 .devContainer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 60rem;
+  width: 45rem;
   gap: 10%;
-  border: solid 2px red;
 }
 
 .devTools > div > ion-icon {
@@ -236,12 +243,17 @@ background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
   font-weight: 100;
 }
 
+.devTools > p, h6 {
+  margin: 0;
+}
+
 .priceContainer {
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 grid-gap: 10px;
 width: 100%;
 padding-bottom: 10px;
+margin-inline: 8%;
 }
 
 .priceOptions {
@@ -305,3 +317,84 @@ footer > ul > li:hover {
  cursor: pointer;
 }
 
+@media (max-width: 1000px) {
+  .priceOptions {
+    width: 15rem;
+    font-size: 90%;
+  }
+}
+
+@media (max-width: 750px) {
+  main > p {
+    font-size: 13px;
+  }
+  header > div > h1 {
+    font-size: 30px;
+  }
+   h2 {
+    font-size: 20px;
+  }
+  .devContainer > div > p {
+    font-size: 50%;
+  }
+  .devContainer {
+    font-size: 80%;
+  }
+  .prices {
+    margin: 0;
+  }
+  .priceOptions {
+    width: 100%;
+  }
+  .priceContainer {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+  
+  .storage-section > div > p {
+   font-size: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .devContainer {
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  }
+  .devTools {
+    width: 12rem;
+  }
+
+}
+
+@media (max-width: 725px) {
+  header > img {
+    width: 200px;
+  }
+  .gg-cloud {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    grid-template-columns: 1fr;
+  }
+  header > img {
+    display: none;
+  }
+  .Extras-section > div {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+    inset: 0 0 0 77%;
+  }
+  nav > p, button  {
+    margin-right: 80%;
+  }
+}
