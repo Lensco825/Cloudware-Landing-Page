@@ -409,10 +409,13 @@ footer > ul > li:hover {
   gap: 10%;
 }
 
-.center {
-  margin-left: 80%;
-  color: red;
+.navbar > p {
+  margin-right: 50%;
 } 
+
+.navbar > button {
+  margin-right: 50%;
+}
 
 a {
   text-decoration: none;
