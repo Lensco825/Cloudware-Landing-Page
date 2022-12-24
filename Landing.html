@@ -11,14 +11,15 @@
 	<title>Cat</title>
 </head>
 <body>
-	<nav>
+	<nav id="navbar">
 		<i class="gg-cloud"></i>
-		<p>Get started</p>
-		<p>Docs</p>
-		<p>Pricing</p>
-		<p>Demo</p>
-		<button>Sign up</button>
+		<p id="menuContent">Docs</p>
+		<p id="menuContent" >Pricing</p>
+		<p id="menuContent">Get started</p>
+		<p id="menuContent">Demo</p>
+		<button id="menuContent">Sign up</button>
 	</nav>
+	<ion-icon name="menu-outline" class="menu-toggle" id="menu-toggle"></ion-icon>
 	<br>
 	<header>
 		<div class="showcase-section">
@@ -87,7 +88,7 @@
 			<div class="priceContainer">
 				<div class="priceOptions">
 					<h1>Solo </h1>
-					<h2 class="center-text">5$ a month</h2>
+					<h2 class="centmenu-content">5$ a month</h2>
 					<ul>
 						<li>Git and github tools available</h1>
 						<li> 20 Programming languages available</h1>
@@ -134,15 +135,16 @@
 					<li>Why cloudware</li>
 					<li>Job application</li>
 					<li>For students</li>
-					<li>Github</li>
+					<li><a href="https://github.com/Lensco825/Cloudware-Landing-Page">Github</a></li>
 				</ul>
 				<ul>
 				<li>Follow me</li>
-				<li>Github page</li>
-				<li>DEV</li>
-				<li>Codepen</li>
+				<li><a href="https://github.com/Lensco825">Github profile</a></li>
+				<li><a href="https://dev.to/lensco825">DEV</a></li>
+				<li><a href="https://codepen.io/lensco825">Codepen</a></li>
 				</ul>
 		</footer>
+		<script defer src="Landing.js"></script>
 		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
